@@ -7,14 +7,16 @@ h2 {
     "current current history"
     "forcast forcast .";
     grid-gap: 5px;
-    /* width: 50%; */
+    width: 75%;
     margin: 0 auto;
 }
 #header{
+    color: white;
     text-align: center;
     border: 2px solid black;
     background-color: teal;
     padding: 5px;
+    margin: 0 auto;
 }
 #current-city{
     grid-area: current;
