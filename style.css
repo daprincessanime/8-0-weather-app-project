@@ -1,0 +1,52 @@
+h2 {
+
+}
+.display {
+    display: grid;
+    grid-template-areas: 
+    "current current history"
+    "forcast forcast .";
+    grid-gap: 5px;
+    /* width: 50%; */
+    margin: 0 auto;
+}
+#header{
+    text-align: center;
+    border: 2px solid black;
+    background-color: teal;
+    padding: 5px;
+}
+#current-city{
+    grid-area: current;
+    background-color: lightgrey;
+    border: 1px solid teal;
+    text-align: center;
+    
+}
+
+.history {
+    grid-area: history;
+    text-align: center;
+}
+
+#previous-searches{
+
+}
+
+#forcast{
+    grid-area: forcast;
+    display: grid;
+    grid-template-areas: 
+    "today tomorrow day-after";
+}
+#today{
+    grid-area: today;
+}
+
+#tomorrow{
+    grid-area: tomorrow;
+}
+
+#day-after{
+    grid-area: day-after;
+}

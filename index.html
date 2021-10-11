@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <div id="header">
+       <h1>Weather App</h1>
+       <form id="location-selector">
+           <div id="error-message"></div>
+           <label>Pick a location</label>
+           <input type="text" id="user-city"/>
+           <input type="submit" value="Get Weather"/>
+       </form>
+    </div>
+    <main class="display">
+        
+           <!-- h2>Choose a location to view the w <eather.</h2> -->
+        <div id="current-city">
+            <h2>Melbourne</h2>
+            <div>Area: Melbourne</div>
+            <div>Region: Victoria</div>
+            <div>Country: Australia</div>
+            <div>Currently: Feels Like 37 F.</div>
+         </div>
+
+     
+         <sidebar class="history">
+            <h3>Previous Searches</h3>
+            <div id="previous-searches">
+                No previous searches 
+            </div>
+        </sidebar>
+         <div id="forcast">
+            <h3 id="today">Today</h3>
+                <div>Average Temperature: 54 F</div>
+                <div>Max Temperature: 60 F</div>
+                <div>Min Temperature:44 F</div>
+
+            <h3 id="tomorrow">Tomorrow</h3>
+                <div>Average Temperature: 55 F</div>
+                <div>Max Temperature: 64 F</div>
+                <div>Min Temperature: 49 F</div>
+
+            <h3 id="day-after">Day After Tomorrow</h3>
+                <div>Average Temperature: 50 F</div>
+                <div>Max Temperature: 57 F</div>
+                <div>Min Temperature: 44 F</div>
+        </div>
+</main>  
+
+</body>
+</html>
