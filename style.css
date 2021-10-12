@@ -42,15 +42,11 @@ h2 {
     display: grid;
     grid-gap: 15px;
     grid-template-areas: 
-    "today tomorrow day-after"
-    "today-average tomorrow-average day-average"
-    "today-max ";
+    "today tomorrow day-after";
+   
 }
 #today{
     grid-area: today;
-    display: grid;
-    grid-template-areas:
-    "today-min .";
     text-align: center;
 }
 
@@ -60,43 +56,36 @@ h2 {
 }
 
 #day-after{
-    /* grid-area: day-after; */
+    
     text-align: center;
 }
 #today-average{
-    /* grid-area: today-average; */
     text-align: center;
 }
 #today-max{
-    /* grid-area: today-max; */
     text-align: center;
 }
 #today-min{
-    /* grid-area: today-min; */
     text-align: center;
 }
 #tomorrow-average{
-    /* grid-area: tomorrow-average; */
     text-align: center;
 }
 
 #tomorrow-max{
-    /* grid-area: tomorrow-max; */
-    text-align: center;
+
 }
 
 #tomorrow-min{
-    /* grid-area: tomorrow-min ; */
     text-align: center;
 }
 
 #day-average{
-    /* grid-area: day-average; */
     text-align: center;
 }
 
 #day-max{
-    /* grid-area: day-max; */
+   text-align: center;
 
 }
 
