@@ -6,7 +6,6 @@ h2 {
     grid-template-areas: 
     "current current history"
     "forcast forcast .";
-    grid-gap: 5px;
     width: 75%;
     margin: 0 auto;
 }
@@ -15,7 +14,9 @@ h2 {
     text-align: center;
     border: 2px solid black;
     background-color: teal;
-    padding: 5px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    width: 75%;
     margin: 0 auto;
 }
 #current-city{
@@ -23,6 +24,7 @@ h2 {
     background-color: lightgrey;
     border: 1px solid teal;
     text-align: center;
+    padding-bottom: 10px;
     
 }
 
@@ -38,17 +40,66 @@ h2 {
 #forcast{
     grid-area: forcast;
     display: grid;
+    grid-gap: 15px;
     grid-template-areas: 
-    "today tomorrow day-after";
+    "today tomorrow day-after"
+    "today-average tomorrow-average day-average"
+    "today-max ";
 }
 #today{
     grid-area: today;
+    display: grid;
+    grid-template-areas:
+    "today-min .";
+    text-align: center;
 }
 
 #tomorrow{
     grid-area: tomorrow;
+    text-align: center;
 }
 
 #day-after{
-    grid-area: day-after;
+    /* grid-area: day-after; */
+    text-align: center;
+}
+#today-average{
+    /* grid-area: today-average; */
+    text-align: center;
+}
+#today-max{
+    /* grid-area: today-max; */
+    text-align: center;
+}
+#today-min{
+    /* grid-area: today-min; */
+    text-align: center;
+}
+#tomorrow-average{
+    /* grid-area: tomorrow-average; */
+    text-align: center;
+}
+
+#tomorrow-max{
+    /* grid-area: tomorrow-max; */
+    text-align: center;
+}
+
+#tomorrow-min{
+    /* grid-area: tomorrow-min ; */
+    text-align: center;
+}
+
+#day-average{
+    /* grid-area: day-average; */
+    text-align: center;
+}
+
+#day-max{
+    /* grid-area: day-max; */
+
+}
+
+#day-min{
+    
 }
