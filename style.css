@@ -10,7 +10,7 @@
     grid-template-areas: 
     "header header header"
     "current current history"
-    "forecast forecast .";
+    "forecast forecast history";
     grid-gap: 10px;
     max-width: 900px;
     width: 75%;
@@ -23,7 +23,8 @@
     text-align: center;
     /* border: 2px solid black; */
     background-color: teal;
-    /* padding-left: 60px; */
+    padding-bottom: 40px;
+    padding-top: 40px;
     
 }
 #current-city{
@@ -61,7 +62,7 @@
 }
 
 #day-after{
-    
+    grid-area: day-after;
     text-align: center;
 }
 #today-average{
