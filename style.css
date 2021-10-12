@@ -1,31 +1,36 @@
-h2 {
+.display > *{
+    border: 1px solid red;
+}
+.error-message{
 
 }
+
 .display {
     display: grid;
     grid-template-areas: 
+    "header header header"
     "current current history"
-    "forcast forcast .";
+    "forecast forecast .";
+    grid-gap: 10px;
+    max-width: 900px;
     width: 75%;
     margin: 0 auto;
+    
 }
 #header{
+    grid-area: header;
     color: white;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: teal;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    width: 75%;
-    margin: 0 auto;
+    /* padding-left: 60px; */
+    
 }
 #current-city{
     grid-area: current;
     background-color: lightgrey;
-    border: 1px solid teal;
-    text-align: center;
-    padding-bottom: 10px;
-    
+    /* border: 1px solid teal; */
+    text-align: center;  
 }
 
 .history {
@@ -37,10 +42,10 @@ h2 {
 
 }
 
-#forcast{
-    grid-area: forcast;
+#forecast{
+    grid-area: forecast;
     display: grid;
-    grid-gap: 15px;
+    /* grid-gap: 15px; */
     grid-template-areas: 
     "today tomorrow day-after";
    

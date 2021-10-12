@@ -9,34 +9,35 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   <div id="header">
-       <h1>Weather App</h1>
-       <form id="location-selector">
-           <div id="error-message"></div>
-           <label>Pick a location</label>
-           <input type="text" id="user-city"/>
-           <input type="submit" value="Get Weather"/>
-       </form>
-    </div>
     <main class="display">
+        <div id="header">
+            <h1>Weather App</h1>
+                <form id="location-selector">
+                    <div id="error-message"></div>
+                    <label>Pick a location</label>
+                    <input type="text" id="user-city"/>
+                    <input type="submit" value="Get Weather"/>
+                </form>
+        </div>
+   
         
-           <!-- h2>Choose a location to view the w <eather.</h2> -->
+           <!-- h2>Choose a location to view the weather.</h2> -->
         <div id="current-city">
             <h2>Melbourne</h2>
-            <div>Area: Melbourne</div>
-            <div>Region: Victoria</div>
-            <div>Country: Australia</div>
-            <div>Currently: Feels Like 37 F.</div>
-         </div>
+            <div id="area">Area: Melbourne</div>
+            <div id="region">Region: Victoria</div>
+            <div id="country">Country: Australia</div>
+            <div id="current-feel">Currently: Feels Like 37 F.</div>
+        </div>
 
      
-         <sidebar class="history">
+        <sidebar class="history">
             <h3>Previous Searches</h3>
             <div id="previous-searches">
                 No previous searches 
             </div>
         </sidebar>
-         <div id="forcast">
+        <div id="forecast">
             <div id="today">
                 <h3>Today</h3>
                 <div id="today-average">Average Temperature: 54 F</div>
@@ -56,7 +57,7 @@
                 <div id="day-min">Min Temperature: 44 F</div>
             </div>
         </div>
-</main>  
+    </main>  
 
 </body>
 </html>
