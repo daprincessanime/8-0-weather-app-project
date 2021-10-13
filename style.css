@@ -11,7 +11,7 @@
     "header header header"
     "current current history"
     "forecast forecast history";
-    grid-gap: 10px;
+    grid-gap: 5px;
     max-width: 900px;
     width: 75%;
     margin: 0 auto;
@@ -23,24 +23,41 @@
     text-align: center;
     /* border: 2px solid black; */
     background-color: teal;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     
 }
 #current-city{
     grid-area: current;
     background-color: lightgrey;
     /* border: 1px solid teal; */
-    text-align: center;  
+    text-align: center; 
+    padding: 10px; 
+    line-height: 200%;
+}
+#area {
+    font-weight: bold;
 }
 
+#region{
+    font-weight: bold;
+}
+
+#country{
+    font-weight: bold;
+}
+
+#current-feel{
+    font-weight: bold;
+
+}
 .history {
     grid-area: history;
-    text-align: center;
+
 }
 
 #previous-searches{
-
+    text-align: center;
 }
 
 #forecast{
@@ -49,21 +66,28 @@
     /* grid-gap: 15px; */
     grid-template-areas: 
     "today tomorrow day-after";
+    padding: 10px;
    
 }
 #today{
     grid-area: today;
     text-align: center;
+    line-height: 200%;
+    font-weight: bold;
 }
 
 #tomorrow{
     grid-area: tomorrow;
     text-align: center;
+    line-height: 200%;
+    font-weight: bold;
 }
 
 #day-after{
     grid-area: day-after;
     text-align: center;
+    line-height: 200%;
+    font-weight: bold;
 }
 #today-average{
     text-align: center;
@@ -79,7 +103,7 @@
 }
 
 #tomorrow-max{
-
+    text-align: center;
 }
 
 #tomorrow-min{
@@ -96,5 +120,5 @@
 }
 
 #day-min{
-    
+    text-align: center;
 }
