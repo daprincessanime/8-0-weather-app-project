@@ -36,19 +36,19 @@
     line-height: 200%;
 }
 #area {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #region{
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #country{
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #current-feel{
-    font-weight: bold;
+    /* font-weight: bold; */
 
 }
 .history {
@@ -73,21 +73,21 @@
     grid-area: today;
     text-align: center;
     line-height: 200%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #tomorrow{
     grid-area: tomorrow;
     text-align: center;
     line-height: 200%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #day-after{
     grid-area: day-after;
     text-align: center;
     line-height: 200%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 #today-average{
     text-align: center;
